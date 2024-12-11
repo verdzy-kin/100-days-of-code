@@ -2,12 +2,12 @@
 year = int(input("enter the year you want to check: "))
 print(type(year))
 if year % 4 == 0:
-    if year % 100 == 0:
-        if year % 400 == 0:
+    if year % 100 != 0:
+        if year % 400 != 0:
             print(f"{year} is a leap year")
         else:
-            print("\n")
+            print("not a leap year\n")
     else:
-        print("\n")
+        print(f"{year} is a leap year")
 else:
     print(f"{year} is not a leap year")
